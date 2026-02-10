@@ -6,12 +6,12 @@
 
 ## 目录
 
-- [[opencode-guide-outline]]
-- [[opencode-part1]]
-- [[opencode-part2]]
-- [[opencode-part3]]
-- [[opencode-part4]]
-- [[opencode-part5]]
+- [[OpenCode/opencode-guide-outline]]
+- [[OpenCode/opencode-part1]]
+- [[OpenCode/opencode-part2]]
+- [[OpenCode/opencode-part3]]
+- [[OpenCode/opencode-part4]]
+- [[OpenCode/opencode-part5]]
 
 ---
 
