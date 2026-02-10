@@ -6,12 +6,12 @@
 
 ## 目录
 
-- [[OpenCode 学习大纲]]
-- [[OpenCode - 第一部分：基础概念和安装]]
-- [[OpenCode - 第二部分：初级 - 基本使用]]
-- [[OpenCode - 第三部分：中级 - 项目集成]]
-- [[OpenCode - 第四部分：高级 - 高级功能]]
-- [[OpenCode - 第五部分：专家级 - 深度定制]]
+- [[opencode-guide-outline]]
+- [[opencode-part1]]
+- [[opencode-part2]]
+- [[opencode-part3]]
+- [[opencode-part4]]
+- [[opencode-part5]]
 
 ---
 
