@@ -6,22 +6,12 @@
 
 ## 目录
 
-- [学习路径大纲](obsidian://open?vault=my-obsidian&file=OpenCode%20学习大纲)
-- [第一部分：入门级 - 基础概念和安装](obsidian://open?vault=my-obsidian&file=OpenCode%20-%20第一部分)
-- [第二部分：初级 - 基本使用](obsidian://open?vault=my-obsidian&file=OpenCode%20-%20第二部分)
-- [第三部分：中级 - 项目集成](obsidian://open?vault=my-obsidian&file=OpenCode%20-%20第三部分)
-- [第四部分：高级 - 高级功能](obsidian://open?vault=my-obsidian&file=OpenCode%20-%20第四部分)
-- [第五部分：专家级 - 深度定制](obsidian://open?vault=my-obsidian&file=OpenCode%20-%20第五部分)
-
----
-
-## 进度
-
-- [x] 第一部分：入门级 ✅
-- [x] 第二部分：初级 ✅
-- [x] 第三部分：中级 ✅
-- [x] 第四部分：高级 ✅
-- [x] 第五部分：专家级 ✅
+- [[OpenCode 学习大纲]]
+- [[OpenCode - 第一部分：基础概念和安装]]
+- [[OpenCode - 第二部分：初级 - 基本使用]]
+- [[OpenCode - 第三部分：中级 - 项目集成]]
+- [[OpenCode - 第四部分：高级 - 高级功能]]
+- [[OpenCode - 第五部分：专家级 - 深度定制]]
 
 ---
 
@@ -54,7 +44,3 @@
 - 🌐 部署本地模型保护隐私
 
 **继续提升开发效率！**
-
----
-
-需要我把所有文档保存到 Obsidian 吗？
