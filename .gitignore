@@ -1,0 +1,17 @@
+# Obsidian plugin cache
+.obsidian/plugins
+
+# Obsidian workspace
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Obsidian sync (if using Obsidian Sync)
+.obsidian/sync/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Obsidian temp files
+.obsidian/trash/
+.obsidian/cache/
