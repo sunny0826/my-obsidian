@@ -2,7 +2,7 @@
 created: 2026-02-22T09:39:00.000Z
 severity: medium
 component: skill
-status: open
+status: resolved
 ---
 
 # health-monitor skill 缺少 origin.json
