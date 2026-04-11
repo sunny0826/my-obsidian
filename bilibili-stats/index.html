@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B站 UP主监控 - 红色幻想乡B号机形态</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+  h1 { color: #00a1d6; margin-bottom: 20px; font-size: 28px; }
+  h2 { color: #222; margin: 25px 0 12px; font-size: 20px; border-left: 4px solid #00a1d6; padding-left: 10px; }
+  .card { background: #fff; border-radius: 10px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 20px; }
+  .stat-box { background: linear-gradient(135deg, #00a1d6, #23c8ff); color: #fff; border-radius: 10px; padding: 18px; text-align: center; }
+  .stat-box.orange { background: linear-gradient(135deg, #ff6b35, #f7c948); }
+  .stat-box.green { background: linear-gradient(135deg, #2ecc71, #27ae60); }
+  .stat-box.purple { background: linear-gradient(135deg, #9b59b6, #8e44ad); }
+  .stat-number { font-size: 32px; font-weight: bold; }
+  .stat-label { font-size: 13px; opacity: 0.9; margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; }
+  th { background: #f7f9fa; text-align: left; padding: 10px 12px; font-size: 13px; color: #666; border-bottom: 2px solid #e8e8e8; }
+  td { padding: 10px 12px; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+  tr:hover { background: #fafbfc; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: bold; }
+  .badge-live { background: #ff4757; color: #fff; }
+  .badge-done { background: #2ed573; color: #fff; }
+  .time { color: #888; font-size: 12px; }
+  .duration { color: #00a1d6; font-weight: bold; }
+  .title-link { color: #00a1d6; text-decoration: none; }
+  .title-link:hover { text-decoration: underline; }
+  .up-avatar { width: 80px; height: 80px; border-radius: 50%; margin-bottom: 10px; }
+  .header-info { display: flex; align-items: center; gap: 20px; }
+  .empty { color: #aaa; text-align: center; padding: 30px; font-size: 14px; }
+  .footer { text-align: center; color: #aaa; font-size: 12px; padding: 20px; }
+  .tag { background: #e8f4f8; color: #00a1d6; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin-right: 5px; display: inline-block; margin-bottom: 3px; }
+  @media (max-width: 768px) { .stats-grid { grid-template-columns: 1fr 1fr; } table { font-size: 12px; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>📺 B站 UP主监控面板</h1>
+
+  <div class="card">
+    <div class="header-info">
+      <img class="up-avatar" src="https://api.bilibili.com/x/space/wbi/avatar?mid=8803699&jsonp=jsonp" alt="avatar" onerror="this.src='https://static.hdslb.com/images/akari.jpg'">
+      <div>
+        <h2 style="border:none;padding:0;margin:0">红色幻想乡B号机形态</h2>
+        <p class="time">UID: 8803699 · 最后更新: 2026-04-11T08:14:28.691798</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-box">
+      <div class="stat-number">0</div>
+      <div class="stat-label">直播场次</div>
+    </div>
+    <div class="stat-box orange">
+      <div class="stat-number">0.0h</div>
+      <div class="stat-label">累计直播时长</div>
+    </div>
+    <div class="stat-box green">
+      <div class="stat-number">0</div>
+      <div class="stat-label">发布视频数</div>
+    </div>
+    <div class="stat-box purple">
+      <div class="stat-number">0s</div>
+      <div class="stat-label">视频总时长</div>
+    </div>
+  </div>
+
+  <h2>📡 直播记录</h2>
+  <div class="card">
+    <table>
+      <thead>
+        <tr>
+          <th>状态</th>
+          <th>开始时间</th>
+          <th>结束时间</th>
+          <th>直播时长</th>
+          <th>房间号</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td colspan="5"><div class="empty">暂无直播记录</div></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>🎬 视频列表</h2>
+  <div class="card">
+    <table>
+      <thead>
+        <tr>
+          <th>标题</th>
+          <th>发布于</th>
+          <th>时长</th>
+          <th>播放</th>
+          <th>弹幕</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td colspan="5"><div class="empty">暂无视频记录</div></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="footer">
+    <p>由 Bilibili Monitor Agent 生成 · 更新时间: 2026-04-11T08:14:28.691798</p>
+    <p>数据来源: Bilibili API</p>
+  </div>
+</div>
+</body>
+</html>
